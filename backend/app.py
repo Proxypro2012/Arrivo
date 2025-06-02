@@ -4,6 +4,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-    return 'Backend for Bus App'
+    return 'Backend for Arrivo'
 
 
