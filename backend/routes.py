@@ -1,4 +1,8 @@
 from backend import app
+import requests
+from flask import Flask, request, jsonify
+
+SECRET_ADMIN_CODE = "SuperSecure2025!"
 
 @app.route("/")
 def home():
@@ -17,3 +21,15 @@ def retrieve_bus_data():
         bus_data = f.read()
         
     return bus_data, 200, {"Content-Type": "application/json"}
+
+
+
+
+
+@app.route('/verify-admin-code', methods=['POST'])
+def verify_admin_code():
+    data = request.get_json()
+    if data.get("code") == SECRET_ADMIN_CODE:
+        return jsonify({"valid": True})
+    else:
+        return jsonify({"valid": False}), 403
