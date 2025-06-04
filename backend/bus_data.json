@@ -1,0 +1,6 @@
+{
+        "buses": [
+            {"id": 19, "status": "left"},
+            {"id": 24, "status": "left"}
+        ]
+}
