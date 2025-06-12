@@ -53,3 +53,23 @@
 
 ## 📦 Project Structure
 
+Arrivo/
+├── AppState.swift # Global app state, Firebase listeners
+├── ContentView.swift # View routing + background transitions
+├── AdminDashboardView.swift # Admin tools with 3-way status toggles
+├── StudentDashboardView.swift # Live bus display for students
+├── Bus.swift # Bus model
+├── FirebaseService.swift # Auth + DB write operations
+├── Assets, Info.plist # App assets and Firebase config
+
+
+---
+
+## 🔐 Authentication
+
+Admins are required to:
+- Sign up with a **verified email**
+- Confirm via **email verification**
+- Login using **Firebase Authentication**
+
+No student login is required.
