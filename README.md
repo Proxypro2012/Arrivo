@@ -21,7 +21,6 @@
 ### 🛠️ For Admins (and/or Teachers)
 - Log in securely via **Firebase Auth**
 - Set status for each bus using a **3-way toggle switch**
-- Automatically resets buses to `Coming` at **midnight**
 - All changes sync **instantly** with Firebase for students to see
 
 ### 🎨 Visual Design
